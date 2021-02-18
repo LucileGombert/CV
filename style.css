@@ -11,8 +11,17 @@ body {
 }
 
 main {
-    display: flex;
+    /* display: flex;
+    justify-content: center; */
+    max-width: 1200px;
+    margin: auto; 
 }
+
+.page {
+    display: flex;
+    margin: 1rem;
+}
+
 h1 {
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -56,6 +65,7 @@ a {
 
 .whiteSection {
     padding: 1rem 3rem;
+    border: 2px solid #333;
 }
 
 .item {
@@ -107,4 +117,30 @@ a {
     background-color:#E60068;
     width: 14rem;
     height: 0.5rem;
+}
+
+@media all and (max-width: 1024px) {
+    .presentation {
+        display: flex;
+        flex-direction: column;
+    }
+    .presentation2 {
+        padding-left: 0;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .whiteSection {
+        border: none;
+    }
+    .blackSection {
+        padding: 1rem 3rem;
+        width: 100%;
+    }
+    
 }
