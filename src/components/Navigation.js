@@ -7,7 +7,7 @@ const Navigation = () => {
             <div className="id">
                 <div className="idContent">
                     <img src="./images/me.JPG" alt="Profil" />
-                   
+                    <img src="./images/groupomania.png" alt="Profil" />
                     {/* <img src="images/me.JPG" alt="Profil3" />
                     <img src={window.location.origin + '/CV/./images/me.JPG'} alt="Profil4"/>
                     <img src={window.location.origin + '/CV/images/me.JPG'} alt="Profil6"/> */}
