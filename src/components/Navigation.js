@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import imageme from './me.JPG';
+// import imageme from './me.JPG';
 import imageme3 from './images/me.JPG';
 // import imageme4 from '/images/me.JPG';
 const Navigation = () => {
@@ -15,7 +15,7 @@ const Navigation = () => {
                     <img src={window.location.origin + './images/me.JPG'} alt="Profil4"/>
                     {/* <img src={window.location.origin + '/images/me.JPG'} alt="Profil5"/> */}
                     <img src={window.location.origin + 'images/me.JPG'} alt="Profil6"/>
-                    <img src={imageme} alt="Profil7"/>
+                    {/* <img src={imageme} alt="Profil7"/> */}
                     <img src={imageme3} alt="Profil9"/>
                     {/* <img src={imageme4} alt="Profil10"/> */}
                     <h2>Lucile Gombert</h2>
