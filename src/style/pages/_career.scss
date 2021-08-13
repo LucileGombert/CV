@@ -1,0 +1,127 @@
+.career {
+    .careerContent {
+        min-height: $minHeight;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 47% 53%;
+        grid-template-areas: "S" "E";
+
+        .studies, .experience {
+            background-color: $color-2;
+            border-radius: $borderRadius;
+            padding: 0.8rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            font-family: $font-2;
+            color: $color-4;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            
+        }
+
+        .studies {
+            grid-area: S;
+            margin: 0 0 0.5rem 0.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 10% 1.3fr 0.5fr 0.5fr;
+            grid-template-areas: "1" "2" "3" "4";
+
+            h3 {
+                grid-area: 1;
+            }
+  
+            h4 {
+                font-size: 0.9rem;
+                color: $color-4;
+            }
+
+            .study-1 {
+                grid-area: 2;
+                margin: auto 0;
+            }
+
+            .study-2 {
+                grid-area: 3;
+                margin: auto 0;
+            }
+
+            .study-3 {
+                grid-area: 4;
+                margin: auto 0;
+            }
+        }
+
+        .experience {
+            grid-area: E;
+            margin: 0 0 0 0.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 10% 1.2fr 1.2fr 0.4fr 0.4fr 0.3fr;
+            grid-template-areas: "1" "2" "3" "4" "5" "6";
+            
+            h3 {
+              grid-area: 1;
+            }
+
+            h4 {
+              font-size: 0.9rem;
+              color: $color-4;
+            }
+            
+            .exp-1 {
+              grid-area: 2;
+              margin: auto 0;
+            }
+
+            .exp-2 {
+              grid-area: 3;
+              margin: auto 0;
+            }
+
+            .exp-3 {
+                grid-area: 4;
+                margin: auto 0;
+            }
+
+            .exp-4 {
+                grid-area: 5;
+                margin: auto 0;
+            }
+
+            .exp-5 {
+                grid-area: 6;
+                margin: auto 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    .careerContent {
+        h3 {
+            font-size: 1.2rem !important;
+        }
+
+        li {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .careerContent {
+        h4 {
+            font-size: 0.9rem !important;
+        }
+
+        .studies, .experience {
+            margin-left: 0 !important;
+        }
+    }
+}

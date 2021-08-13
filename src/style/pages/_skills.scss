@@ -1,0 +1,246 @@
+.skills {
+	.skillsContent {
+		min-height: $minHeight;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		display: grid;
+		grid-template-columns: 50% 1fr;
+		grid-template-rows: 25% 40% 35%;
+		grid-template-areas: "L S" "L T" "L H";
+
+		.hardSkills,
+		.softSkills,
+		.transversalSkills,
+		.hobbies {
+			background-color: $color-2;
+			border-radius: $borderRadius;
+			padding: 0.8rem;
+		}
+
+		h3 {
+			font-size: 1.1rem;
+			font-family: $font-2;
+			color: $color-4;
+			text-transform: uppercase;
+			margin-bottom: 1rem;
+		}
+
+		.hardSkills {
+			grid-area: L;
+			margin: 0 0 0 0.5rem;
+			display: grid;
+			grid-template-columns: 1fr;
+			// grid-template-rows: 0.5fr 43% 37% 1fr;
+			grid-template-rows: 0.2fr 1.4fr 1.3fr 0.4fr;
+			grid-template-areas: "T" "F" "B" "O";
+
+			h3 {
+				grid-area: T;
+			}
+
+			h4 {
+				margin-bottom: 0.6rem;
+			}
+
+			.frontDisplay {
+				grid-area: F;
+				margin: auto 0;
+			}
+
+			.backDisplay {
+				grid-area: B;
+				margin: auto 0;
+			}
+
+			.otherDisplay {
+				grid-area: O;
+				margin: auto 0;
+			}
+
+			.years {
+				font-size: 0.65rem;
+				display: flex;
+				justify-content: space-between;
+				color: $white;
+
+				span {
+					width: 36%;
+
+					&:nth-child(2) {
+						text-align: right;
+						width: 20%;
+					}
+
+					&:nth-child(3) {
+						text-align: right;
+						width: 44%;
+					}
+
+					&:nth-child(2)::before,
+					&:nth-child(3)::before {
+						content: "";
+						background-color: rgba(180, 179, 179, 0.5);
+						position: absolute;
+						height: 160px;
+						width: 1px;
+						transform: translate(9px, 19px);
+					}
+				}
+			}
+
+			.languagesList {
+				padding-top: 0.5rem;
+
+				li {
+					color: $color-1;
+				}
+
+				.progressBar {
+					height: 0.4rem;
+					background-color: transparent;
+					border-radius: 50px;
+					margin-top: 0.2rem;
+					position: relative;
+
+					&::after {
+						content: "";
+						position: absolute;
+						background-color: $color-3;
+						border-radius: 50px;
+						height: 0.4rem;
+						width: 0;
+						animation: line 2s ease-out forwards;
+
+						@keyframes line {
+							to {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+
+			.otherDisplay {
+				grid-area: O;
+
+				.list ul {
+					display: flex;
+					justify-content: space-around;
+					flex-wrap: wrap;
+
+					li {
+						padding-right: 1rem;
+					}
+
+					i {
+						color: $color-4;
+						padding-right: 0.5rem;
+					}
+				}
+			}
+		}
+
+		.softSkills {
+			grid-area: S;
+			margin: 0 0 0.5rem 0.5rem;
+
+			.list {
+				display: flex;
+				height: 100%;
+
+				ul {
+					height: 80%;
+					display: grid;
+
+					li span {
+						color: $color-4;
+					}
+				}
+			}
+		}
+
+		.transversalSkills {
+			grid-area: T;
+			margin: 0 0 0.5rem 0.5rem;
+
+			.list {
+				display: flex;
+				height: 100%;
+
+				ul {
+					height: 80%;
+					display: grid;
+
+					li span {
+						color: $color-4;
+					}
+				}
+			}
+		}
+
+		.hobbies {
+			grid-area: H;
+			margin: 0 0 0 0.5rem;
+			
+			.list {
+				display: flex;
+				height: 100%;
+
+				ul {
+					height: 80%;
+					display: grid;
+
+					li i {
+						color: $color-4;
+						padding-right: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.hardSkills,
+	.softSkills,
+	.transversalSkills,
+	.hobbies {
+		font-size: 0.8rem;
+
+		h3 {
+			font-size: 1rem !important;
+		}
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.hardSkills {
+		margin-left: 0 !important;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.skillsContent {
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		grid-template-rows: 53% 1fr 1.5fr 1.2fr !important;
+		grid-template-areas: "L" "S" "T" "H" !important;
+
+		.hardSkills {
+			grid-area: L !important;
+		}
+		.softSkills {
+			grid-area: S !important;
+			margin: 0.5rem 0 0 0 !important;
+		}
+		.transversalSkills {
+			grid-area: T !important;
+			margin: 0.5rem 0 0 0 !important;
+		}
+		.hobbies {
+			grid-area: H !important;
+			margin: 0.5rem 0 0 0 !important;
+		}
+	}
+}
