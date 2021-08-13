@@ -13,8 +13,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Switch>
-          {/* <Route path='/' exact component={Home} /> */}
-          <Route path='/CV2/' exact component={Home} />
+          <Route path='/CV/' exact component={Home} />
           <Route path='/parcours' component={Career} />
           <Route path='/competences' component={Skills} />
           <Route path='/portfolio' component={Portfolio} />

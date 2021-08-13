@@ -1,14 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import ProfileImage from "../../media/me.JPG";
 
 const Navigation = () => {
     return (
         <div className="sidebar">
             <div className="id">
                 <div className="idContent">
-                    {/* // <img src="./media/me.JPG" alt="Profil" /> */}
-                    <img src={ProfileImage} alt="Profil" />
+                    {/* <img src="./media/me.JPG" alt="Profil" /> */}
+                    <img src="%PUBLIC_URL%/me.JPG" alt="Profil" />
                     <h2>Lucile Gombert</h2>
                 </div>
 
