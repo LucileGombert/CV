@@ -14,10 +14,10 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route path='/CV/' exact component={Home} />
-          <Route path='/parcours' component={Career} />
-          <Route path='/competences' component={Skills} />
-          <Route path='/portfolio' component={Portfolio} />
-          <Route path='/contact' component={Contact} />
+          <Route path='/CV/parcours' component={Career} />
+          <Route path='/CV/competences' component={Skills} />
+          <Route path='/CV/portfolio' component={Portfolio} />
+          <Route path='/CV/contact' component={Contact} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

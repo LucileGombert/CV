@@ -6,7 +6,7 @@ export const portfolioData = [
     languagesIcons: ['fab fa-html5','fab fa-css3-alt'],
     source: 'https://github.com/LucileGombert/Reservia',
     info: 'Intégration de la maquette d\'un site de planification de vacances.',
-    picture: './media/reservia.png'
+    picture: './images/reservia.png'
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const portfolioData = [
     languagesIcons: ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-sass'],
     source: 'https://github.com/LucileGombert/OhMyFood',
     info: 'Dynamiser un site mobile qui répertorie les menus de restaurants gastronomiques.',
-    picture: './media/ohmyfood.png'
+    picture: './images/ohmyfood.png'
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const portfolioData = [
     languagesIcons: ['fab fa-html5','fab fa-css3-alt'],
     source: 'https://github.com/LucileGombert/LaChouetteAgence',
     info: 'Optimisation du site web d\'une agence de web design en termes de SEO et d\'accessibilité (WCAG).',
-    picture: './media/lachouetteagence.png'
+    picture: './images/lachouetteagence.png'
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const portfolioData = [
     languagesIcons: ['fab fa-html5','fab fa-css3-alt', 'fab fa-bootstrap', 'fab fa-js'],
     source: 'https://github.com/LucileGombert/Orinoco',
     info: 'Création d\'un site e-commerce.',
-    picture: './media/orinoco.png'
+    picture: './images/orinoco.png'
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const portfolioData = [
     languagesIcons: ['fab fa-js', 'fab fa-node-js'],
     source: 'https://github.com/LucileGombert/SoPekocko',
     info: 'Développement d\'une API sécurisée pour une application d\'avis gastronomiques.',
-    picture: './media/sopekocko.png'
+    picture: './images/sopekocko.png'
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const portfolioData = [
     languagesIcons: ['fab fa-css3-alt', 'fab fa-js','fab fa-vuejs', 'fab fa-node-js'],
     source: 'https://github.com/LucileGombert/Groupomania',
     info: 'Création d\'un réseau social d\'entreprise.',
-    picture: './media/groupomania.png'
+    picture: './images/groupomania.png'
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const portfolioData = [
     languagesIcons: ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-js'],
     source: 'https://github.com/LucileGombert/Portfolio.V2',
     info: 'Réalisation de mon portfolio afin d\'exposer mes réalisations.',
-    picture: './media/portfolio.jpg'
+    picture: './images/portfolio.jpg'
   },
   {
     id: 8,
@@ -69,6 +69,6 @@ export const portfolioData = [
     languagesIcons: ['fab fa-sass', 'fab fa-js','fab fa-react'],
     source: 'http://www.github.com',
     info: 'Création de mon CV en React.js',
-    picture: './media/portfolio.jpg'
+    picture: './images/portfolio.jpg'
   },
 ]
