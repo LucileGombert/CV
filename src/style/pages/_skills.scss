@@ -13,7 +13,7 @@
 		.softSkills,
 		.transversalSkills,
 		.hobbies {
-			background-color: $color-2;
+			background-color: $color-3;
 			border-radius: $borderRadius;
 			padding: 0.8rem;
 		}
@@ -62,7 +62,7 @@
 				font-size: 0.65rem;
 				display: flex;
 				justify-content: space-between;
-				color: $white;
+				color: $color-4;
 
 				span {
 					width: 36%;
@@ -80,11 +80,16 @@
 					&:nth-child(2)::before,
 					&:nth-child(3)::before {
 						content: "";
-						background-color: rgba(180, 179, 179, 0.5);
+						background-color: $color-4;
 						position: absolute;
-						height: 160px;
+						height: 220px;
 						width: 1px;
 						transform: translate(9px, 19px);
+					}
+
+					&:nth-child(3)::before {
+						content: "";
+						width: 0.5px;
 					}
 				}
 			}
@@ -106,7 +111,7 @@
 					&::after {
 						content: "";
 						position: absolute;
-						background-color: $color-3;
+						background-color: $color-2;
 						border-radius: 50px;
 						height: 0.4rem;
 						width: 0;
@@ -210,6 +215,17 @@
 
 		h3 {
 			font-size: 1rem !important;
+		}
+	}
+
+	.years {
+		span {
+			&:nth-child(2)::before,
+			&:nth-child(3)::before {
+				content: "";
+				height: 190px !important;
+				
+			}
 		}
 	}
 }
