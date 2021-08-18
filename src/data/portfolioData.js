@@ -67,8 +67,8 @@ export const portfolioData = [
     name: 'CV',
     languages: ['tout', 'sass', 'javascript','react'],
     languagesIcons: ['fab fa-sass', 'fab fa-js','fab fa-react'],
-    source: 'http://www.github.com',
+    source: 'https://github.com/LucileGombert/CV',
     info: 'Création de mon CV en React.js',
-    picture: './images/portfolio.jpg'
+    picture: './images/CV.jpg'
   },
 ]
