@@ -12,7 +12,7 @@ class Project extends Component {
     }
 
     render() {
-        let {name, languagesIcons, source, info, picture} = this.props.item;
+        let {name, languagesIcons, source, link, info, picture} = this.props.item;
         
         return (
             <div className="project">
@@ -25,8 +25,11 @@ class Project extends Component {
                     
                     <h3>{name}</h3>
 
-                    <img src={picture} alt="" onClick={this.handleInfo}/>
+                    {/* <img src={picture} alt="" onClick={this.handleInfo}/> */}
 
+                    <a href={link} target="_blank" rel="noreferrer">
+                        <img src={picture} alt="Projet"/>
+                    </a>
                     <span className="infos" onClick={this.handleInfo}>
                         <i className="fas fa-plus-circle"></i>
                     </span>
