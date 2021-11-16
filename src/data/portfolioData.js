@@ -87,7 +87,7 @@ export const portfolioData = [
     source: 'https://github.com/LucileGombert/FlappyWiwi',
     link: 'https://lucilegombert.github.io/FlappyWiwi/',
     info: 'Création d\'un jeu inspiré du célèbre Flappy Bird',
-    picture: './images/flappywiwi.jpg'
+    picture: './images/flappywiwi.png'
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ export const portfolioData = [
     source: 'https://github.com/LucileGombert/Wiwi-LoginForm',
     link: 'https://lucilegombert.github.io/Wiwi-LoginForm/',
     info: 'Réalisation d\'un formulaire de contact interactif',
-    picture: './images/loginform.jpg'
+    picture: './images/loginform.png'
   },
   {
     id: 11,
@@ -107,6 +107,6 @@ export const portfolioData = [
     source: 'https://github.com/LucileGombert/CryptoTracker',
     link: 'https://lucilegombert.github.io/CryptoTracker/',
     info: 'Création d\'une application permettant de suivre l\'évolution du marché des cryptomonnaies',
-    picture: './images/cryptotracker.jpg'
+    picture: './images/cryptotracker.png'
   },
 ]
